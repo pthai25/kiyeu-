@@ -300,8 +300,6 @@ setInterval(()=>{ imgStickers.forEach(st => sparkleSticker(st)); },700);
     <div class="invite-frame" id="frame">
       <img class="invite-img" id="inviteImg" src="kiyeu.jpg" alt="Thiệp mời kỷ yếu">
       <div class="invite-overlay"></div>
-      <div class="img-sticker s1">❤️ .... !</div>
-      <div class="img-sticker s2">🎉 ....</div>
     </div>
   </div>
 </div>
@@ -312,7 +310,7 @@ setInterval(()=>{ imgStickers.forEach(st => sparkleSticker(st)); },700);
   <small>Nhạc nền</small>
   <div class="bar" aria-hidden="true"><i id="progress" style="width:0%"></i></div>
 </div>
-<audio id="bg" loop preload="auto" src="assets/music.mp3" autoplay></audio>
+<audio id="bg" loop preload="auto" src="kiyeu1.mp3" autoplay></audio>
 <canvas id="confetti"></canvas>
 
 <script>
@@ -371,15 +369,6 @@ function updateConfetti(){ ctx.clearRect(0,0,confettiCanvas.width,confettiCanvas
 setInterval(createConfetti,300);
 (function loop(){ updateConfetti(); requestAnimationFrame(loop); })();
 
-/* ---------- Floating texts ---------- */
-const floatingContainer = document.getElementById("floatingTexts");
-const texts = [
-  "Con me may!",
-  "Me May bel",
-  "Con Cho Cao Bang BoPC",
-  "chuc mung nam moi"
-];
-
 function createFloatingText() {
   const t = document.createElement("div");
   t.className = "floating-text";
@@ -407,4 +396,3 @@ for(let i=0; i<8; i++) createFloatingText();
 </script>
 </body>
 </html>
-
